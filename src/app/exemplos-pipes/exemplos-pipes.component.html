@@ -1,0 +1,17 @@
+<p>Informações do Livro</p>
+
+<p>Editora : {{ livro.editora | uppercase}}</p>
+<p>Idioma : {{ livro.idioma | lowercase }}</p>
+<p>Número de páginas : {{ livro.paginas | number }}</p>
+<p>Preço : {{ livro.preco | currency:'BRL'}}</p>
+<p>Data : {{ livro.data | date:'dd-MM-yyyy' }}</p>
+<p>Data : {{ livro.data | date:'short' }}</p>
+<p>ISBN-10 : {{ livro.ISBN10 }}</p>
+<p>ISBN-13 : {{ livro.ISBN13 }}</p>
+<p>Dimensões : {{ livro.dimensoes }}</p>
+<p>Avaliações dos clientes: {{ livro.avaliacoes | number:'2.1-2'}}</p> 
+
+<br>
+<br>
+
+<p>{{ livro |json}}</p>
